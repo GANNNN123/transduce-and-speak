@@ -85,659 +85,6 @@
             </div>
         </div>
 
-
-        <!-- Audio Samples -->
-        <div class='col'>
-            <hr>
-            <div class='row text-center'>
-                <div class='col'>
-                    <p class='h2 font-weight-bold '>Single Speaker TTS</p>
-                </div>
-            </div>
-	    <div>
-		    <p style="font-size:large; color:black"> The proposed model was pre-trained on the speech-only dataset of LJSpeech(22 hours), and fine-tuned on the subsets of labeled LJSpeech with denoted lengths. All the baselines were also trained on the denoted dataset.
-</p>
-	    </div>
-		
-		
-
-            <div class='row' style='margin-top: 40px; margin-bottom: 10px;'>
-                <p class='h4'>Audio samples</p>
-            </div>
-
-
-            <div style='display: flex; align-content: center;flex-wrap: nowrap;'>
-                <div style='flex: 1;  '>
-                    <div class='row' style='width: 450px; height:130px; '>
-                        <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'><b>Text</b></p>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>But they proceeded in all seriousness, and would have shrunk from no outrage or atrocity in furtherance of their foolhardy enterprise.</i></p>
-                        </div>
-                    </div>
-
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Ground Truth</p>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./LJSpeech/GT/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-			
-			
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(1) LJSpeech, 10 min</b></p>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-			
-			
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>GlowTTS</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>FastSpeech2</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed
-                            </p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(2) LJSpeech, 1 hour</b></p>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>GlowTTS</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>FastSpeech2</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(3) LJSpeech, 10 hour</b></p>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>GlowTTS</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>FastSpeech2</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		 </div>
-		    
-<!-- 	<div style='display: flex; align-content: center;flex-wrap: nowrap; '> -->
-                <div style='flex: 2;'>
-                    <div class='row' style='width: 300px; height:130px; '>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>The proceeds of the robbery were lodged in a Boston bank,</i></p>
-                        </div>
-                    </div>
-		
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-		</div>
-                <div style='flex: 3;  '>
-                    <div class='row' style='width: 300px; height:130px; '>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>On the other hand, he could have traveled some distance with the money he did have and he did return to his room where he obtained his revolver.</i></p>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./LJSpeech/GT/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-			
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-	        </div>
-                <div style='flex: 4;  '>
-                    <div class='row' style='width: 300px; height:130px; '>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>might have been more alert in the Dallas motorcade if they had retired promptly in Fort Worth.</i></p>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./LJSpeech/GT/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-		 </div>
-            </div>
-		
-		
-		
-		
-
-		
-
         <!-- Audio Samples -->
         <div class='col'>
             <hr>
@@ -1483,8 +830,714 @@
             </div>
 
 
+            <div style='margin-top:40px'>
+                <hr>
+                <div class='row text-center'>
+                    <div class='col'>
+                        <p class='h2 font-weight-bold '>prosody controllability</p>
+                    </div>
+                </div>
+            <div class='col text-center'>
+                <div class="container" style="max-width:850px; margin-top: 20px; margin-bottom: 10px">
+                    <p style='line-height:1.3; font-size:large; text-align: justify'>
+                        &lt;T2T controllability&gt; Generated samples using reference speech. The 'reference's are used for extracting style embedding, and the 'synthesized's are synthesized speeches using that style embeddings. 
+                    </p>
+                </div>
+            </div>
+
+            <div class='row' style='margin-top: 20px; margin-bottom: 0px;'>
+                <p class='h5'>Sentence 1</p>
+            </div>     
+            <div class='row' style='margin-top: 0px; margin-bottom: 0px; margin-left: 2px;'>
+                <p class='h7'>This is a test sentecne</p>
+            </div>             
+                <div style='width: 450px; height:60px; '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; text-align: center;'>reference &lt;T2S&gt</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; margin-bottom: 20px;'>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>            
+
+            <div style='display: flex; align-content: center; '>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 1 </p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 1</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
 
 
+            <div class='row' style='margin-top: 20px; margin-bottom: 0px;'>
+                <p class='h4'>Sentence 2</p>
+            </div>        
+
+            <div style='display: flex; align-content: center; '>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 1 </p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 1</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+
+
+            <div class='row' style='margin-top: 20px; margin-bottom: 0px;'>
+                <p class='h4'>Sentence 3</p>
+            </div>        
+
+            <div style='display: flex; align-content: center; '>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 1 </p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 1</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+
+
+            <div class='row' style='margin-top: 20px; margin-bottom: 0px;'>
+                <p class='h4'>Sentence 4</p>
+            </div>        
+
+            <div style='display: flex; align-content: center; '>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 1 </p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 1</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+
+            <div class='col text-center'>
+                <div class="container" style="max-width:850px; margin-top: 60px; margin-bottom: 10px">
+                    <p style='line-height:1.3; font-size:large; text-align: justify'>
+                        &lt;T2S controllability&gt; Generated samples using reference speech. The 'reference's are used for extracting style embedding, and the 'synthesized's are synthesized speeches using that style embeddings. 
+                    </p>
+                </div>
+            </div>
+
+            <div class='row' style='margin-top: 20px; margin-bottom: 0px;'>
+                <p class='h5'>Sentence 1</p>
+            </div>     
+            <div class='row' style='margin-top: 5px; margin-bottom: 0px; margin-left: 2px;'>
+                <p class='h7'>This is a test sentecne</p>
+            </div>             
+            
+
+            <div style='display: flex; align-content: center; '>
+                <div style='width: 450px; height:2px;'>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 1 </p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 1</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence1/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+
+
+            <div class='row' style='margin-top: 20px; margin-bottom: 0px;'>
+                <p class='h4'>Sentence 2</p>
+            </div>        
+
+            <div style='display: flex; align-content: center; '>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 1 </p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 1</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence2/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+
+
+            <div class='row' style='margin-top: 20px; margin-bottom: 0px;'>
+                <p class='h4'>Sentence 3</p>
+            </div>        
+
+            <div style='display: flex; align-content: center; '>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 1 </p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 1</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence3/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+
+
+            <div class='row' style='margin-top: 20px; margin-bottom: 0px;'>
+                <p class='h4'>Sentence 4</p>
+            </div>        
+
+            <div style='display: flex; align-content: center; '>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 1 </p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 1</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 2</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div style='flex: 1;  '>
+                    <div class='row' style='width: 300px; height:20px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 0px; text-align: center;'>reference 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class='row' style='width: 300px; height:30px; '>
+                        <p style='height: 20px; width: 300px; padding-top: 10px; text-align: center;'>synthesized 3</p>
+                    </div>
+                    <div class='row' style='width: 300px; height:40px; '>        
+                        <div style='height: 60px; vertical-align: middle'>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
+                                <source src="./assets/ref_sentence4/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+            
+            </div>
+            <hr>            
+            
                 <!-- Optional JavaScript -->
                 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
