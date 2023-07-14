@@ -588,7 +588,7 @@
                 <hr>
                 <div class='row text-center'>
                     <div class='col'>
-                        <p class='h2 font-weight-bold '>Prosody controllability</p>
+                        <p class='h2 font-weight-bold '>Controllability</p>
                     </div>
                 </div>
                 
@@ -601,8 +601,8 @@
                     </p>                
                     <p style='line-height:1.3; font-size:large; text-align: justify;'>
                         We fix the reference speech of T2S stage, and allowed only the neural transducer (T2T) to control the prosody.<br>
-                        - Acoustic-related attributes (e.g. speaker, noise) of T2S reference speech are reflected in the generated speech.<br>
-                        - Duration-related attributes (e.g. speech rate, prosody) of T2T reference speech are reflected in the generated speech.
+                        - <font color="orange"><b>Duration-related attributes</b></font> (e.g. speech rate, prosody) of <font color="orange"><b>&lt;T2T&gt; reference</b></font> are reflected in the generated speech.<br>
+                        - <font color="green"><b>Acoustic-related attributes</b></font> (e.g. speaker, noise) of <font color="green"><b>&lt;T2S&gt; reference</b></font> are reflected in the generated speech.<br>
                     </p>
                 </div>
             </div>
@@ -995,28 +995,30 @@
                         <font color="green"><b>&lt;T2S controllability&gt;</b></font>
                     </p>                
                     <p style='line-height:1.3; font-size:large; text-align: justify;'>
-                        Generated samples using reference speech. The 'reference's are used for extracting style embedding, and the 'synthesized's are synthesized speeches using that style embeddings. 
+                        We fix the semantic tokens generated from T2T stage, and allowed only the T2S stage to control the acoustic condition.<br>
+                        - <font color="orange"><b>Duration-related attributes</b></font> (e.g. speech rate, prosody) of <font color="orange"><b>&lt;T2T&gt; reference</b></font> are reflected in the generated speech.<br>
+                        - <font color="green"><b>Acoustic-related attributes</b></font> (e.g. speaker, noise) of <font color="green"><b>&lt;T2S&gt; reference</b></font> are reflected in the generated speech.
                     </p>
                 </div>
             </div>
 
 
-            <hr class='hr-dotted'/>
+            <hr class='hr-dotted'/>            
             <div class='row' style='margin-top: 20px; margin-bottom: 0px;  margin-left: 4px;'>
-                <p class='h6'>Text 1</p>
+                <p class='h6'><b>Text</b></p>
             </div>     
             <div class='row' style='margin-top: 0px; margin-bottom: -10px; margin-left: 4px;'>
-                <p class='h7'>This is a test sentecne</p>
+                <p class='h7'><i>Alexander arrived early, and some twenty odd people dropped in during the course of the afternoon.</i></p>
             </div>             
                 <div style='width: 450px; height:60px; margin-bottom: 10px;'>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; text-align: center;'><b>&lt;T2S&gt; reference</b></p>
+                        <p style='height: 20px; width: 280px; text-align: center;'><font color="orange"><b>&lt;T2T&gt; reference</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; margin-bottom: 20px;'>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_1_t2t_ref.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1026,13 +1028,13 @@
             <div style='display: flex; align-content: center; '>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 1</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 1</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_1_t2s_ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1044,20 +1046,20 @@
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_1_gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 2</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 2</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_1_t2s_ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1069,20 +1071,20 @@
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_1_gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 3</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 3</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_1_t2s_ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1094,56 +1096,54 @@
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_1_gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>    
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 3</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 4</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_1_t2s_ref4.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                     
                     <div class='row' style='width: 280px; height:30px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 10px; text-align: center;'><b>synthesized 3</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 10px; text-align: center;'><b>synthesized 4</b></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_1_gen4.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>                   
             </div>
-            </div>
-
 
             <hr class='hr-dotted'/>
             <div class='row' style='margin-top: 20px; margin-bottom: 0px;  margin-left: 4px;'>
-                <p class='h6'>Text 2</p>
+                <p class='h6'><b>Text</b></p>
             </div>     
             <div class='row' style='margin-top: 0px; margin-bottom: -10px; margin-left: 4px;'>
-                <p class='h7'>This is a test sentecne</p>
+                <p class='h7'><i>With the seal of the holy Priesthood upon their wedded state, these people believe implicitly in the perpetuity of that relationship on the far side of the grave.</i></p>
             </div>             
                 <div style='width: 450px; height:60px; margin-bottom: 10px;'>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; text-align: center;'><b>&lt;T2S&gt; reference</b></p>
+                        <p style='height: 20px; width: 280px; text-align: center;'><font color="orange"><b>&lt;T2T&gt; reference</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; margin-bottom: 20px;'>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_2_t2t_ref.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1153,13 +1153,13 @@
             <div style='display: flex; align-content: center; '>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 1</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 1</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_2_t2s_ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1171,20 +1171,20 @@
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_2_gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 2</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 2</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_2_t2s_ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1196,20 +1196,20 @@
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_2_gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 3</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 3</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_2_t2s_ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1221,55 +1221,55 @@
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_2_gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>    
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 3</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 4</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_2_t2s_ref4.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                     
                     <div class='row' style='width: 280px; height:30px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 10px; text-align: center;'><b>synthesized 3</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 10px; text-align: center;'><b>synthesized 4</b></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_2_gen4.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
-                </div>                   
+                </div>           
             </div>
-            
+
 
             <hr class='hr-dotted'/>
             <div class='row' style='margin-top: 20px; margin-bottom: 0px;  margin-left: 4px;'>
-                <p class='h6'>Text 3</p>
+                <p class='h6'><b>Text</b></p>
             </div>     
             <div class='row' style='margin-top: 0px; margin-bottom: -10px; margin-left: 4px;'>
-                <p class='h7'>This is a test sentecne</p>
+                <p class='h7'><i>There their sad condition evoked for a time general commiseration.</i></p>
             </div>             
                 <div style='width: 450px; height:60px; margin-bottom: 10px;'>
-                    <div class='row' style='width: 300px; height:20px; '>
-                        <p style='height: 20px; width: 300px; text-align: center;'><b>&lt;T2S&gt; reference</b></p>
+                    <div class='row' style='width: 280px; height:20px; '>
+                        <p style='height: 20px; width: 280px; text-align: center;'><font color="orange"><b>&lt;T2T&gt; reference</b></font></p>
                     </div>
-                    <div class='row' style='width: 300px; height:40px; margin-bottom: 20px;'>        
+                    <div class='row' style='width: 280px; height:40px; margin-bottom: 20px;'>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 300px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
+                                <source src="./assets/prosody/2_3_t2t_ref.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1279,13 +1279,13 @@
             <div style='display: flex; align-content: center; '>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 1</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 1</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_3_t2s_ref1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1297,20 +1297,20 @@
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_3_gen1.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 2</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 2</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_3_t2s_ref2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1322,20 +1322,20 @@
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_3_gen2.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 3</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 3</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_3_t2s_ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -1347,38 +1347,38 @@
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_3_gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                 </div>    
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 280px; height:20px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><b>&lt;T2T&gt; reference 3</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 0px; text-align: center;'><font color="green"><b>&lt;T2S&gt; reference 4</b></font></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/ref3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_3_t2s_ref4.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                     
                     <div class='row' style='width: 280px; height:30px; '>
-                        <p style='height: 20px; width: 280px; padding-top: 10px; text-align: center;'><b>synthesized 3</b></p>
+                        <p style='height: 20px; width: 280px; padding-top: 10px; text-align: center;'><b>synthesized 4</b></p>
                     </div>
                     <div class='row' style='width: 280px; height:40px; '>        
                         <div style='height: 60px; vertical-align: middle'>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 280px; height: 50px;'>
-                                <source src="./assets/ref_sentence1/gen3.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./assets/prosody/2_3_gen4.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
-                </div>                   
+                </div>
             </div>
-            </div>            
+            </div>
             <hr> 
             
             
